@@ -14,8 +14,7 @@ namespace MEF.TheTests
     {
         private CustomerManager SetupCustomerManager()
         {
-            //var catalog = new TypeCatalog(typeof(CustomerAccessor));
-            var catalog = new TypeCatalog(typeof(MockCustomerAccessor));
+            var catalog = new TypeCatalog(typeof(CustomerAccessor));
             var configuration = new CompositionContainer(catalog);
 
             var customerManager = new CustomerManager();
